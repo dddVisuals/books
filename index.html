@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Books by Damon Moore</title>
+<meta name="description" content="Coloring books for little kids, plus a career guide and an AI workbook for teens and grown-ups. All on Amazon.">
+<meta name="author" content="Damon Moore">
+<meta property="og:title" content="Books by Damon Moore">
+<meta property="og:description" content="Coloring books for little kids, plus a career guide and an AI workbook for teens and grown-ups. All on Amazon.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dddvisuals.github.io/books/og.jpg">
+<meta property="og:url" content="https://dddvisuals.github.io/books/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;500;700&display=swap">
+<style>
+/* Layout: author shelf. Header, then two shelves (kids / teens & grown-ups), each book a spine-colored card with one clear buy button. */
+:root{
+  --bg:#F7F8FB; --surface:#FFFFFF; --fg:#16192E; --muted:#5A5F78; --line:#E2E5EE;
+  --navy:#1B1F3B; --teal:#0E7C7B; --gold:#E3A82B; --red:#C23B3B; --green:#2E7D4F; --violet:#5B4BB7;
+  --btn-fg:#FFFFFF;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1122; --surface:#181B30; --fg:#EEF0F7; --muted:#A3A8C2; --line:#2A2E48; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1122; --surface:#181B30; --fg:#EEF0F7; --muted:#A3A8C2; --line:#2A2E48; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:880px;margin:0 auto;padding-block:40px 56px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:40px}
+header{display:flex;flex-direction:column;gap:10px;text-align:center;align-items:center}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,7vw,3.4rem);line-height:1.05;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--muted);max-width:46ch}
+.shelf{display:flex;flex-direction:column;gap:16px}
+.shelf h2{font-family:var(--display);font-weight:600;font-size:1.45rem;margin:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.shelf h2 span{font-family:var(--body);font-size:.85rem;font-weight:500;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:620px){.grid{grid-template-columns:1fr}}
+.book{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;padding:16px;align-items:start}
+.cover{display:block;border-radius:4px 8px 8px 4px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.18),0 8px 18px -6px rgba(0,0,0,.35);transition:transform .2s}
+.cover:hover{transform:translateY(-3px)}
+.cwrap{display:flex;flex-direction:column;gap:10px;min-width:0}
+.ctype{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg);background:color-mix(in srgb,var(--c) 18%,transparent);border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:999px;padding:5px 6px}
+.cover img{display:block;width:100%;height:auto}
+@media (max-width:380px){.book{grid-template-columns:104px minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.cover{transition:none}}
+.info{padding:0;height:100%;display:flex;flex-direction:column;gap:8px;min-width:0}
+.info h3{margin:0;font-size:1.1rem;font-weight:700;line-height:1.25}
+.tag{font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.info p{margin:0;font-size:.95rem;color:var(--muted)}
+.buy{margin-top:auto;align-self:flex-start;background:var(--c);color:var(--btn-fg);text-decoration:none;font-weight:700;font-size:.92rem;padding:10px 16px;border-radius:999px}
+.buy:hover{filter:brightness(1.1)}
+.buy:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Now on Amazon</div>
+    <h1>Books by Damon Moore</h1>
+    <p>Coloring fun for little kids, and real-world guides for teens and grown-ups figuring out work in the age of AI.</p>
+  </header>
+
+  <section class="shelf">
+    <h2>For little kids <span>Ages 3 to 7</span></h2>
+    <div class="grid">
+      <article class="book" style="--c:var(--red)">
+        <div class="cwrap"><a class="cover" href="https://a.co/d/0aXABEFc" target="_blank" rel="noopener"><img src="covers/xmas.jpg" alt="Christmas Magic Everywhere book cover" width="360"></a><div class="ctype">Coloring Book</div></div>
+        <div class="info">
+          <div class="tag">Ages 3 to 7</div>
+          <h3>Christmas Magic Everywhere</h3>
+          <p>Santa, reindeer, trains, and trees in bold, easy-to-color line art, with a positive message on every page.</p>
+          <a class="buy" href="https://a.co/d/0aXABEFc" target="_blank" rel="noopener">Get it on Amazon</a>
+        </div>
+      </article>
+      <article class="book" style="--c:var(--violet)">
+        <div class="cwrap"><a class="cover" href="https://a.co/d/028i8Pla" target="_blank" rel="noopener"><img src="covers/bigfun.jpg" alt="Big Fun Coloring Book book cover" width="360"></a><div class="ctype">Coloring Book</div></div>
+        <div class="info">
+          <div class="tag">Ages 3 to 6</div>
+          <h3>Big Fun Coloring Book</h3>
+          <p>Amazing adventures with dinosaurs, unicorns, rockets, and more. Big, bold pages made for small hands.</p>
+          <a class="buy" href="https://a.co/d/028i8Pla" target="_blank" rel="noopener">Get it on Amazon</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="shelf">
+    <h2>For teens and grown-ups <span>Careers and AI</span></h2>
+    <div class="grid">
+      <article class="book" style="--c:var(--navy)">
+        <div class="cwrap"><a class="cover" href="https://a.co/d/04pfS5IN" target="_blank" rel="noopener"><img src="covers/nextmove.jpg" alt="Next Move book cover" width="360"></a><div class="ctype">Career Guide</div></div>
+        <div class="info">
+          <div class="tag">Ages 14 and up</div>
+          <h3>Next Move</h3>
+          <p>Careers, skills, and survival in the age of AI. College vs. trades, real costs, and how to test-drive a career first.</p>
+          <a class="buy" href="https://a.co/d/04pfS5IN" target="_blank" rel="noopener">Get it on Amazon</a>
+        </div>
+      </article>
+      <article class="book" style="--c:var(--teal)">
+        <div class="cwrap"><a class="cover" href="https://a.co/d/06EpxWyS" target="_blank" rel="noopener"><img src="covers/typeit.jpg" alt="Type It. Try It. Use It. book cover" width="360"></a><div class="ctype">AI Workbook</div></div>
+        <div class="info">
+          <div class="tag">AI workbook for everyone</div>
+          <h3>Type It. Try It. Use It.</h3>
+          <p>15 fun lessons for using AI at home, at work, and to make money. An AI workbook for everyone.</p>
+          <a class="buy" href="https://a.co/d/06EpxWyS" target="_blank" rel="noopener">Get it on Amazon</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer>Got a copy? A quick Amazon review helps more families find these books.</footer>
+</div>
+
+</body>
+</html>
